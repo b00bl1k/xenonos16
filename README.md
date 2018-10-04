@@ -1,5 +1,7 @@
 # XenonOS-16
 
+[Run it in your browser](https://copy.sh/v86/?profile=custom&fda.url=https://raw.b00bl1k.ru/xenon004.img&fda.size=1474560)
+
 ![Screenshot](screenshot.png)
 
 16-битная  многозадачная операционная система, работающая в реальном режиме
