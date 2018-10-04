@@ -1,0 +1,41 @@
+
+
+DPSMouseDrv PS/2 Mouse driver version 0.9
+=========================================
+
+Read this before installing it:
+
+	This is meant as a small substitute to the Microsoft Mouse
+	driver.  But, it's mostly for educational purposes.  It has mostly
+	all of the key functions(standard int 33h) that most applications
+	use.
+
+How to run it:
+
+	Make sure your in dos(not windows).  Although this will work
+	with memory managers in dos and for protected mode dos apps,
+	it will not work in windows.  Also make sure that there are
+	no other drivers installed(like microsoft's).  It is a TSR that
+	cannot be unloaded.
+
+But, here are some things that it's missing(shouldn't be a problem
+though):
+
+	1. The absolute cursor position functions are supported for 80x25
+	   text mode only.  Higher resolution text modes should use the
+	   mouse delta technique.
+	2. Does not provide a cursor for graphics modes(like 13h).
+	   Just text mode cursor is provided.
+	3. Doesn't have the statistic functions(like # of times
+	   left button pressed).
+	4. You can't change the character that is displayed for the
+	   cursor.  It is always a block.
+
+Known bugs to be corrected:
+
+	1. Programs that install custom mouse event handlers that do not
+	   restore the old handler on exit might cause a crash.
+	2. Mouse cursor is not hidden automatically on exit of a program.
+
+If you find any bugs or if it doesn't work on your computer, send me an
+e-mail at dpsicilia@mindspring.com.
